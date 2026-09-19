@@ -1,0 +1,121 @@
+import { ColorPalette, MotionConfig } from '../types.ts';
+
+export const COLOR_PALETTES: ColorPalette[] = [
+  {
+    id: 'original',
+    name: 'Gốc (Xanh Teal & Biển Sâu)',
+    topBg: '#FFFFFF',
+    bottomBg: '#012E3B',
+    waveBorder: '#80DEEA',
+    waveSecondary: '#05475A',
+    topText: '#0B566F',
+    bottomText: '#FFFFFF',
+    badgeBg: '#0B566F',
+    badgeText: '#FFFFFF',
+    accent: '#26C6DA',
+  },
+  {
+    id: 'alert_crisis',
+    name: 'Cảnh Báo Khẩn (Đỏ Cảnh Báo)',
+    topBg: '#FFF5F5',
+    bottomBg: '#200A0A',
+    waveBorder: '#EF4444',
+    waveSecondary: '#7F1D1D',
+    topText: '#991B1B',
+    bottomText: '#FFFFFF',
+    badgeBg: '#DC2626',
+    badgeText: '#FFFFFF',
+    accent: '#F87171',
+  },
+  {
+    id: 'eco_future',
+    name: 'Môi Trường Xanh (Lá & Biển)',
+    topBg: '#F2FBF6',
+    bottomBg: '#062B17',
+    waveBorder: '#34D399',
+    waveSecondary: '#0E492A',
+    topText: '#0F693A',
+    bottomText: '#FFFFFF',
+    badgeBg: '#059669',
+    badgeText: '#FFFFFF',
+    accent: '#10B981',
+  },
+  {
+    id: 'industrial_smog',
+    name: 'Khói Bụi Công Nghiệp (Hổ Phách)',
+    topBg: '#FFFDF5',
+    bottomBg: '#1C1917',
+    waveBorder: '#F59E0B',
+    waveSecondary: '#44403C',
+    topText: '#B45309',
+    bottomText: '#FFFFFF',
+    badgeBg: '#D97706',
+    badgeText: '#FFFFFF',
+    accent: '#FBBF24',
+  },
+  {
+    id: 'cyber_midnight',
+    name: 'Màn Đêm Kỹ Thuật Số (Cyan Neon)',
+    topBg: '#0F172A',
+    bottomBg: '#020617',
+    waveBorder: '#38BDF8',
+    waveSecondary: '#1E293B',
+    topText: '#38BDF8',
+    bottomText: '#FFFFFF',
+    badgeBg: '#0284C7',
+    badgeText: '#FFFFFF',
+    accent: '#00F0FF',
+  },
+];
+
+export const TEXT_VARIANTS = [
+  {
+    id: 'with_and',
+    label: 'Bản gốc đầy đủ (Có chữ "VÀ")',
+    topText: 'QUY HOẠCH\nQUÁ CHẬM',
+    bottomText: 'VÀ Ô NHIỄM\nMÔI TRƯỜNG',
+  },
+  {
+    id: 'without_and',
+    label: 'Bản rút gọn (Chỉ có chữ "Ô NHIỄM MÔI TRƯỜNG")',
+    topText: 'QUY HOẠCH\nQUÁ CHẬM',
+    bottomText: 'Ô NHIỄM\nMÔI TRƯỜNG',
+  },
+  {
+    id: 'single_line_each',
+    label: 'Hai dòng ngang gọn gàng',
+    topText: 'QUY HOẠCH QUÁ CHẬM',
+    bottomText: 'Ô NHIỄM MÔI TRƯỜNG',
+  },
+];
+
+export const DEFAULT_CONFIG: MotionConfig = {
+  topText: 'QUY HOẠCH\nQUÁ CHẬM',
+  bottomText: 'VÀ Ô NHIỄM\nMÔI TRƯỜNG',
+  categoryBadge: '',
+  showBadge: false,
+  
+  fontFamily: 'Montserrat',
+  fontSizeTop: 56,
+  fontSizeBottom: 58,
+  letterSpacing: 4.5,
+  lineHeight: 1.18,
+  
+  waveSpeed: 1.0,
+  waveFrequency: 1.1,
+  waveAmplitude: 34,
+  waveElevation: 0.52,
+  waveLayers: 3,
+  waveTurbulence: 0.25,
+  
+  particleType: 'bubbles_smog',
+  particleDensity: 45,
+  showWaveFoam: true,
+  glowEffect: false,
+  
+  kineticStyle: 'stagger_slide',
+  
+  paletteId: 'original',
+  aspectRatio: '2:1',
+  soundEnabled: true,
+};

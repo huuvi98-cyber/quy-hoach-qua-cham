@@ -1,0 +1,6 @@
+{
+  "name": "Đồ Họa Động - Motion Graphics Studio",
+  "description": "Trình diễn đồ họa động tương tác chuyên đề: Quy hoạch quá chậm và ô nhiễm môi trường với hiệu ứng sóng nước, kinetic typography và xuất video.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
